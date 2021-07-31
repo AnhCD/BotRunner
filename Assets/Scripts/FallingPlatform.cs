@@ -15,6 +15,7 @@ public class FallingPlatform : MonoBehaviour
     {
         if(collision.gameObject.name.Equals("Player"))
         {
+            PlatformsManager.Instance.StartCoroutine("SpawnPlatform", new Vector2(transform.position.x, transform.position.y));
             Invoke("DropPlatform", 0.5f);
             Destroy(gameObject, 2f);
         }
