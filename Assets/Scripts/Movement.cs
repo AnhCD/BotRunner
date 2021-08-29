@@ -306,4 +306,12 @@ public class Movement : MonoBehaviour
         int particleSide = coll.onRightWall ? 1 : -1;
         return particleSide;
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "FallDetector")
+        {
+            
+        }
+    }
 }
