@@ -41,12 +41,17 @@ public class Movement : MonoBehaviour
     public ParticleSystem wallJumpParticle;
     public ParticleSystem slideParticle;
 
+    public Vector3 respawnPoint;
+
+    public Transform player;
+
     // Start is called before the first frame update
     void Start()
     {
         coll = GetComponent<Collision>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<AnimationScript>();
+        // respawnPoint = transform.position;
     }
 
     // Update is called once per frame
@@ -309,9 +314,14 @@ public class Movement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        
         if(other.tag == "FallDetector")
         {
-            
+            transform.position = respawnPoint;
+        }
+        if(other.tag == "CheckPoint")
+        {
+            respawnPoint = other.transform.position;
         }
     }
 }
