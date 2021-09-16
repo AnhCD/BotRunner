@@ -44,6 +44,7 @@ public class Movement : MonoBehaviour
     public Vector3 respawnPoint;
 
     public Transform player;
+    // public VectorValue startingPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +52,7 @@ public class Movement : MonoBehaviour
         coll = GetComponent<Collision>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<AnimationScript>();
+        // transform.position = startingPosition.initialValue;
         // respawnPoint = transform.position;
     }
 
@@ -209,7 +211,7 @@ public class Movement : MonoBehaviour
 
     IEnumerator GroundDash()
     {
-        yield return new WaitForSeconds(.15f);
+        yield return new WaitForSeconds(1f);
         if (coll.onGround)
             hasDashed = false;
     }
@@ -222,12 +224,13 @@ public class Movement : MonoBehaviour
             anim.Flip(side);
         }
 
-        StopCoroutine(DisableMovement(0));
+        StopCoroutine(DisableMovement(0f));
         StartCoroutine(DisableMovement(.1f));
 
         Vector2 wallDir = coll.onRightWall ? Vector2.left : Vector2.right;
 
         Jump((Vector2.up / 1.5f + wallDir / 1.5f), true);
+        // Jump((Vector2.up + wallDir), true);
 
         wallJumped = true;
     }
@@ -316,6 +319,10 @@ public class Movement : MonoBehaviour
     {
         
         if(other.tag == "FallDetector")
+        {
+            transform.position = respawnPoint;
+        }
+        if (other.tag == "Spike")
         {
             transform.position = respawnPoint;
         }

@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - FallDetector
   - CheckPoint
+  - Spike
+  - VerticalPlatform
   layers:
   - Default
   - TransparentFX

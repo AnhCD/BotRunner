@@ -4,35 +4,42 @@ using UnityEngine;
 
 public class VerticalPlatform : MonoBehaviour
 {
-    private PlatformEffector2D effector;
-    public float waitTime;
-
-    void Start()
-    {
-        effector = GetComponent<PlatformEffector2D>();
-    }
+    private GameObject currentVerticalPlatform;
+    [SerializeField] private CapsuleCollider2D playerCollider;
 
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
-            waitTime = 0f;
-        }
-        if(Input.GetKey(KeyCode.S))
-        {
-            if(waitTime <= 0)
+            if (currentVerticalPlatform != null)
             {
-                effector.rotationalOffset = 180f;
-                waitTime = 0f;
-            }
-            else
-            {
-                waitTime -= Time.deltaTime;
+                StartCoroutine(DisableCollision());
             }
         }
-        if (Input.GetButton("Jump"))
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("VerticalPlatform"))
         {
-            effector.rotationalOffset = 0;
+            currentVerticalPlatform = collision.gameObject;
         }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("VerticalPlatform"))
+        {
+            currentVerticalPlatform = null;
+        }
+    }
+
+    private IEnumerator DisableCollision()
+    {
+        CompositeCollider2D platformCollider = currentVerticalPlatform.GetComponent<CompositeCollider2D>();
+
+        Physics2D.IgnoreCollision(playerCollider, platformCollider);
+        yield return new WaitForSeconds(0.25f);
+        Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
     }
 }

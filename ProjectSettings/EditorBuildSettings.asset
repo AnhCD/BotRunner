@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Prologue.unity
+    guid: ae772e99d37d94d46ad5363f60abbbdd
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity.unity
+    guid: b230575d48914f94a8cc7b7fc0ed8fc8
   m_configObjects: {}
