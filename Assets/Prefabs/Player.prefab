@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1070164942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1070164943}
+  m_Layer: 0
+  m_Name: KeyPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1070164943
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070164942}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.65, y: 0.13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7741090353976834958}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7741090353340109653
 GameObject:
   m_ObjectHideFlags: 0
@@ -9785,6 +9815,7 @@ Transform:
   - {fileID: 7741090354195919892}
   - {fileID: 7741090353340109654}
   - {fileID: 7741090354285207713}
+  - {fileID: 1070164943}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9854,8 +9885,7 @@ MonoBehaviour:
   wallJumpParticle: {fileID: 7741090353949410012}
   slideParticle: {fileID: 7741090354361712680}
   respawnPoint: {x: 0, y: 0, z: 0}
-  player: {fileID: 0}
-  startingPosition: {fileID: 11400000, guid: 31292a2bbcfbabb44866d77b9fd97d8a, type: 2}
+  keyFollowPos: {fileID: 1070164943}
 --- !u!114 &7741090353976834954
 MonoBehaviour:
   m_ObjectHideFlags: 0

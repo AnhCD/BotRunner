@@ -10,6 +10,8 @@ TagManager:
   - CheckPoint
   - Spike
   - VerticalPlatform
+  - Saw
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX

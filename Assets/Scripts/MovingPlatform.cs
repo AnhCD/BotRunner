@@ -4,12 +4,26 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    public Vector3 pos1;
-    public Vector3 pos2;
-    public float speed = 1.0f;
-    
+    public Vector2[] setPath;
+    public int currentPathIndex = 0;
+    public float speed;
+
+    void Start()
+    {
+        
+    }
+
     void Update()
     {
-        transform.position = Vector3.Lerp(pos1, pos2, Mathf.PingPong(Time.time * speed, 1.0f));
+        transform.position = Vector2.MoveTowards(transform.position, setPath[currentPathIndex], speed * Time.deltaTime);
+        if (transform.position.x == setPath[currentPathIndex].x && transform.position.y == setPath[currentPathIndex].y)
+        {
+            currentPathIndex++;
+            //reach the last location in the list, go back to the first
+            if (currentPathIndex >= setPath.Length)
+            {
+                currentPathIndex = 0;
+            }
+        }
     }
 }

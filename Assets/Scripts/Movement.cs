@@ -26,6 +26,7 @@ public class Movement : MonoBehaviour
     public bool wallJumped;
     public bool wallSlide;
     public bool isDashing;
+    public bool onMovingPlatform = false;
 
     [Space]
 
@@ -43,7 +44,9 @@ public class Movement : MonoBehaviour
 
     public Vector3 respawnPoint;
 
-    public Transform player;
+    public Transform keyFollowPos;
+
+    public Keys followingKey;
     // public VectorValue startingPosition;
 
     // Start is called before the first frame update
@@ -229,8 +232,8 @@ public class Movement : MonoBehaviour
 
         Vector2 wallDir = coll.onRightWall ? Vector2.left : Vector2.right;
 
-        Jump((Vector2.up / 1.5f + wallDir / 1.5f), true);
-        // Jump((Vector2.up + wallDir), true);
+        Jump((Vector2.up / 1.5f + wallDir/1.5f), true);
+        // Jump((Vector2.up/1f), true);
 
         wallJumped = true;
     }
@@ -329,6 +332,28 @@ public class Movement : MonoBehaviour
         if(other.tag == "CheckPoint")
         {
             respawnPoint = other.transform.position;
+        }
+        if (other.tag == "Saw")
+        {
+            transform.position = respawnPoint;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "MovingPlatform")
+        {
+            transform.parent = collision.gameObject.transform;
+            onMovingPlatform = true;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "MovingPlatform")
+        {
+            transform.parent = null;
+            onMovingPlatform = false;
         }
     }
 }
