@@ -45,6 +45,7 @@ public class Sign : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
+            dialogBox.SetActive(false);
         }
     }
 }

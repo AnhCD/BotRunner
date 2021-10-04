@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: dae7968dcb5a16e41a67d4a5c5e37b16
+  - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: b4d00a85831c94d44a5c25c1b46e9963
+  - enabled: 1
     path: Assets/Scenes/Prologue/Prologue_Scene1.unity
     guid: 584f461822bb89f45a1c0d33004c5b6d
   - enabled: 1
@@ -56,6 +62,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene13.unity
     guid: 842d64b3ad10f41479a37e6b7a7f1caf
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene14.unity
+    guid: c7fe433c54122fc4a919a55317e4518b
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene15.unity
+    guid: 1946acdc7ef0e544b8adec907336907c
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene16.unity
+    guid: 02e7d2aa9bca1e240bb276049e6d8179
   - enabled: 1
     path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene17.unity
     guid: 9a8ca9f57f020384da0c4d3db3262944

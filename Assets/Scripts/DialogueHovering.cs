@@ -9,14 +9,13 @@ public class DialogueHovering : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        isOn = false;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // gameObject.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -27,11 +26,11 @@ public class DialogueHovering : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            gameObject.SetActive(false);
-        }
-    }
+    // void OnTriggerExit2D(Collider2D other)
+    // {
+    //     if (other.CompareTag("Player"))
+    //     {
+    //         gameObject.SetActive(false);
+    //     }
+    // }
 }
