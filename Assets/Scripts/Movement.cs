@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
@@ -43,6 +44,7 @@ public class Movement : MonoBehaviour
     public ParticleSystem slideParticle;
 
     public Vector3 respawnPoint;
+    
 
     public Transform keyFollowPos;
 
@@ -50,6 +52,7 @@ public class Movement : MonoBehaviour
     // public VectorValue startingPosition;
 
     // Start is called before the first frame update
+
     void Start()
     {
         coll = GetComponent<Collision>();
@@ -108,6 +111,7 @@ public class Movement : MonoBehaviour
 
         if(coll.onWall && !coll.onGround)
         {
+            hasDashed = false;
             if (x != 0 && !wallGrab)
             {
                 wallSlide = true;
@@ -324,10 +328,13 @@ public class Movement : MonoBehaviour
         if(other.tag == "FallDetector")
         {
             transform.position = respawnPoint;
+            Application.LoadLevel(Application.loadedLevel);
+            
         }
         if (other.tag == "Spike")
         {
             transform.position = respawnPoint;
+            Application.LoadLevel(Application.loadedLevel);
         }
         if(other.tag == "CheckPoint")
         {
@@ -336,6 +343,11 @@ public class Movement : MonoBehaviour
         if (other.tag == "Saw")
         {
             transform.position = respawnPoint;
+            Application.LoadLevel(Application.loadedLevel);
+        }
+        if(other.tag == "Gem")
+        {
+            hasDashed = false;
         }
     }
 
@@ -343,8 +355,10 @@ public class Movement : MonoBehaviour
     {
         if(collision.gameObject.tag == "MovingPlatform")
         {
+            speed = 10;
             transform.parent = collision.gameObject.transform;
             onMovingPlatform = true;
+            
         }
     }
 
@@ -356,4 +370,9 @@ public class Movement : MonoBehaviour
             onMovingPlatform = false;
         }
     }
+
+    // public void PlatformScroll(float x)
+    // {
+    //     rb.velocity = new Vector2(x, rb.velocity.y);
+    // }
 }

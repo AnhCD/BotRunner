@@ -12,6 +12,7 @@ TagManager:
   - VerticalPlatform
   - Saw
   - MovingPlatform
+  - Gem
   layers:
   - Default
   - TransparentFX

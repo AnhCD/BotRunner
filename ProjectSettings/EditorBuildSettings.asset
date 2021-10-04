@@ -6,9 +6,64 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Prologue.unity
-    guid: ae772e99d37d94d46ad5363f60abbbdd
+    path: Assets/Scenes/Prologue/Prologue_Scene1.unity
+    guid: 584f461822bb89f45a1c0d33004c5b6d
   - enabled: 1
-    path: Assets/Scenes/ForbidenCity.unity
-    guid: b230575d48914f94a8cc7b7fc0ed8fc8
-  m_configObjects: {}
+    path: Assets/Scenes/Prologue/Prologue_Scene2.unity
+    guid: 8f746b3c799109b418d14b7c257ed170
+  - enabled: 1
+    path: Assets/Scenes/Prologue/Prologue_Scene3.unity
+    guid: 9cb6549a750ac0947b138fd7ed8389b9
+  - enabled: 1
+    path: Assets/Scenes/Prologue/Prologue_Scene4.unity
+    guid: b8f2f90b7d8604b44aa3e3f6697d661d
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCIty_Scene1.unity
+    guid: 67c06d6d8d86bdd45853c79a102b1a85
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene2.unity
+    guid: 3073cbf6d3ca5e7408df36ca96a4f9cd
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene3.unity
+    guid: 3c127cfbc7b56164cba0284f2df8c5be
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene4.unity
+    guid: 13b89f1079c4d7144beaa618f0f1e0a7
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene5.unity
+    guid: af991b96df963b74f864f87a1cae19f0
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene6.unity
+    guid: ec7b4d2b4d7a52d4ea58fdf8d16b3cd2
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene7.unity
+    guid: ba6cc5aca0567b547866c89fe2733b01
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCIty_Scene8.unity
+    guid: e18afced7e4267f4aa2e53907b78a9bb
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene9.unity
+    guid: c5f1e426dbfd0a948a0630fc933b2d6b
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene10.unity
+    guid: 44eb61dba25e52847964c1744bc8f6ce
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene11.unity
+    guid: 19c794b71eb9b154f9045cbfc9a08d9b
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene12.unity
+    guid: d9829f7186641684e835962d4dc3c955
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene13.unity
+    guid: 842d64b3ad10f41479a37e6b7a7f1caf
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene17.unity
+    guid: 9a8ca9f57f020384da0c4d3db3262944
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene18.unity
+    guid: a75bc2c869c1d9440bc0cd4b8baf44ee
+  - enabled: 1
+    path: Assets/Scenes/ForbidenCity/ForbidenCity_SceneComplete.unity
+    guid: 1dd0030752b7f234f9decdb1bffbb41b
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}

@@ -9853,8 +9853,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.33}
-  m_Size: {x: 0.86, y: 0.82}
+  m_Offset: {x: -0.043978214, y: -0.32999998}
+  m_Size: {x: 0.6338301, y: 0.86}
   m_Direction: 0
 --- !u!114 &7741090353976834957
 MonoBehaviour:
@@ -9873,12 +9873,13 @@ MonoBehaviour:
   jumpForce: 12
   slideSpeed: 1
   wallJumpLerp: 5
-  dashSpeed: 40
+  dashSpeed: 55
   canMove: 1
   wallGrab: 0
   wallJumped: 0
   wallSlide: 0
   isDashing: 0
+  onMovingPlatform: 0
   side: 1
   dashParticle: {fileID: 7741090354195919890}
   jumpParticle: {fileID: 7741090353340109652}
@@ -9886,6 +9887,7 @@ MonoBehaviour:
   slideParticle: {fileID: 7741090354361712680}
   respawnPoint: {x: 0, y: 0, z: 0}
   keyFollowPos: {fileID: 1070164943}
+  followingKey: {fileID: 0}
 --- !u!114 &7741090353976834954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9922,8 +9924,8 @@ MonoBehaviour:
   wallSide: 0
   collisionRadius: 0.1
   bottomOffset: {x: 0, y: -0.79}
-  rightOffset: {x: 0.5, y: -0.33}
-  leftOffset: {x: -0.5, y: -0.33}
+  rightOffset: {x: 0.35, y: -0.33}
+  leftOffset: {x: -0.42, y: -0.33}
 --- !u!114 &213863367
 MonoBehaviour:
   m_ObjectHideFlags: 0

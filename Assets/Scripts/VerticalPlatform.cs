@@ -39,7 +39,7 @@ public class VerticalPlatform : MonoBehaviour
         CompositeCollider2D platformCollider = currentVerticalPlatform.GetComponent<CompositeCollider2D>();
 
         Physics2D.IgnoreCollision(playerCollider, platformCollider);
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.2f);
         Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
     }
 }

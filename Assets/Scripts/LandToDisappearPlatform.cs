@@ -5,31 +5,21 @@ using UnityEngine;
 public class LandToDisappearPlatform : MonoBehaviour
 {
     private Rigidbody2D RB;
-    public float timeToDisappear = 1;
-    public float currentTime;
-    public bool isCountdowning;
+    Vector2 startPos;
+    public bool respawn = true;
 
     void Start()
     {
         
         RB = GetComponent<Rigidbody2D>();
-        
+        startPos = transform.position;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {   
-        if (timeToDisappear > 0)
+        if (collision.gameObject.tag == "Player")
         {
-            timeToDisappear -= Time.deltaTime;
-        }
-        else
-        {
-            timeToDisappear = 0;
-            isCountdowning = false;
-            if (collision.gameObject.tag == "Player")
-            {
-                gameObject.SetActive(false);
-            }
+            gameObject.SetActive(false);
         }
         
     }
