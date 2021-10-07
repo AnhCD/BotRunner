@@ -14,6 +14,7 @@ public class LevelLoader : MonoBehaviour
         if(Input.GetButtonDown("Fire1"))
         {
             LoadNextScene();
+            SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
         }
     }
 
