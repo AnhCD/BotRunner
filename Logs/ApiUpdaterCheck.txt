@@ -38,3 +38,13 @@ C# parse time         : 5959ms
 candidates check time : 232ms
 console write time    : 43ms
 
+[api-updater (non-obsolete-error-filter)] 10/9/2021 2:14:30 PM : Starting D:/VSCode/2020.3.7f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 31568.5063ms
+moved types parse time: 335ms
+candidates parse time : 111ms
+C# parse time         : 2518ms
+candidates check time : 60ms
+console write time    : 14ms
+

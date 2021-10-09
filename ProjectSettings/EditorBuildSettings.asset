@@ -80,5 +80,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ForbidenCity/ForbidenCity_SceneComplete.unity
     guid: 1dd0030752b7f234f9decdb1bffbb41b
+  - enabled: 1
+    path: Assets/Scenes/GameComplete.unity
+    guid: b5667885482c63142930b8e967997c26
+  - enabled: 1
+    path: Assets/Scenes/CreditScene.unity
+    guid: 2577062cc50dfdb4c905d0ed66685437
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}

@@ -12913,6 +12913,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 34916489140624045, guid: 638edd6c33a626545a6c49e3c4bf1e06, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4470393471364997070, guid: 637481680a2269f4abe8e3c96db8869f, type: 3}
+    - target: {fileID: 34916489140624045, guid: 638edd6c33a626545a6c49e3c4bf1e06, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Save
+      objectReference: {fileID: 0}
     - target: {fileID: 34916489217501394, guid: 638edd6c33a626545a6c49e3c4bf1e06, type: 3}
       propertyPath: m_Pivot.x
       value: 0
