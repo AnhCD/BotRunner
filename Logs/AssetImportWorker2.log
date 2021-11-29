@@ -1,0 +1,106 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 3969 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\VSCode\2020.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Admin/Documents/GitHub/BotRunner
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+58027
+Successfully changed project path to: C:/Users/Admin/Documents/GitHub/BotRunner
+C:/Users/Admin/Documents/GitHub/BotRunner
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 80.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path D:/VSCode/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Admin/Documents/GitHub/BotRunner/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960M (ID=0x139b)
+    Vendor:   
+    VRAM:     4055 MB
+    Driver:   23.21.13.9125
+Initialize mono
+Mono path[0] = 'D:/VSCode/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'D:/VSCode/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/VSCode/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56056
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/VSCode/2020.3.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/VSCode/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002132 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 93.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.648 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005669 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 77.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.369 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.36 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2344 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.6 MB.
+System memory in use after: 105.6 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2795.
+Total: 4.772600 ms (FindLiveObjects: 0.439000 ms CreateObjectMapping: 0.202400 ms MarkObjects: 3.775800 ms  DeleteObjects: 0.352700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene3.unity
+  artifactKey: Guid(3c127cfbc7b56164cba0284f2df8c5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ForbidenCity/ForbidenCity_Scene3.unity using Guid(3c127cfbc7b56164cba0284f2df8c5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27f7b9b6db30bd39e91f0d766397483a') in 0.122067 seconds
+  Import took 0.129255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/Scenes/ForbidenCity/ForbidenCity_Scene9.unity
+  artifactKey: Guid(c5f1e426dbfd0a948a0630fc933b2d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ForbidenCity/ForbidenCity_Scene9.unity using Guid(c5f1e426dbfd0a948a0630fc933b2d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82688a6c824dcf624232a5d189e4a20b') in 0.010405 seconds
+  Import took 0.016856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000469 seconds.
+  path: Assets/Scenes/ForbidenCity/ForbidenCIty_Scene1.unity
+  artifactKey: Guid(67c06d6d8d86bdd45853c79a102b1a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ForbidenCity/ForbidenCIty_Scene1.unity using Guid(67c06d6d8d86bdd45853c79a102b1a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5165fc0f69aaef2953adcefa0f2356c9') in 0.010340 seconds
+  Import took 0.015934 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 8.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.1 MB.
+System memory in use after: 58.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2795.
+Total: 6.077900 ms (FindLiveObjects: 0.447500 ms CreateObjectMapping: 0.201400 ms MarkObjects: 5.158500 ms  DeleteObjects: 0.268600 ms)
+

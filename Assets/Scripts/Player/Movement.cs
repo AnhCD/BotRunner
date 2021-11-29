@@ -44,11 +44,6 @@ public class Movement : MonoBehaviour
     public ParticleSystem slideParticle;
 
     public Vector3 respawnPoint;
-    
-
-    public Transform keyFollowPos;
-
-    public Keys followingKey;
     // public VectorValue startingPosition;
 
     // Start is called before the first frame update
@@ -370,9 +365,4 @@ public class Movement : MonoBehaviour
             onMovingPlatform = false;
         }
     }
-
-    // public void PlatformScroll(float x)
-    // {
-    //     rb.velocity = new Vector2(x, rb.velocity.y);
-    // }
 }

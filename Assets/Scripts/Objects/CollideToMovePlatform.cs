@@ -9,11 +9,6 @@ public class CollideToMovePlatform : MonoBehaviour
     public int currentPathIndex;
     public float speed;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, setPath[currentPathIndex], speed * Time.deltaTime);
@@ -36,7 +31,7 @@ public class CollideToMovePlatform : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            speed = 10;
+            speed = 5;
         }
     }
 

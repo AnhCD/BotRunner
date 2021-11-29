@@ -8,11 +8,6 @@ public class MovingPlatform : MonoBehaviour
     public int currentPathIndex = 0;
     public float speed;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, setPath[currentPathIndex], speed * Time.deltaTime);

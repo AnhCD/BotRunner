@@ -9934,6 +9934,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5641168976630045226, guid: dc77f968c14c66348b47a5c9790b14ac, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5641168976630045226, guid: dc77f968c14c66348b47a5c9790b14ac, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -19199,6 +19203,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5932314529414303308, guid: d9325aafead73994c97e639b8dae6fda, type: 3}
+      propertyPath: sceneToLoad
+      value: GameComplete
+      objectReference: {fileID: 0}
     - target: {fileID: 5932314529414303309, guid: d9325aafead73994c97e639b8dae6fda, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -19247,8 +19255,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scene Loader
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5932314529414303308, guid: d9325aafead73994c97e639b8dae6fda, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9325aafead73994c97e639b8dae6fda, type: 3}
 --- !u!1001 &1914473411
 PrefabInstance:

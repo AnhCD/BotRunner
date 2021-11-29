@@ -13820,6 +13820,8 @@ MonoBehaviour:
   dialogText: {fileID: 1070218217}
   dialog: You almost there. It's just across the bridge.
   playerInRange: 0
+  transition: {fileID: 0}
+  transitionTime: 0
 --- !u!61 &1526100279
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14119,7 +14121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743c9d0f0d6d07745807f912ff93de12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOn: 0
+  rb: {fileID: 0}
+  isOn: 1
 --- !u!61 &1638754838
 BoxCollider2D:
   m_ObjectHideFlags: 0

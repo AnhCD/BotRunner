@@ -8,10 +8,10 @@ public class SaveScene : MonoBehaviour
     int Saved_scene;
     int Scene_index;
 
-    public void new_game()
-    {
-        SceneManager.LoadSceneAsync(2);
-    }
+    // public void new_game()
+    // {
+    //     SceneManager.LoadSceneAsync(2);
+    // }
 
     public void Load_Saved_Scene()
     {
@@ -31,9 +31,9 @@ public class SaveScene : MonoBehaviour
         SceneManager.LoadSceneAsync(1);
     }
         
-    public void Next_Scene()
-    {
-        Scene_index = SceneManager.GetActiveScene().buildIndex + 1;
-        SceneManager.LoadSceneAsync(Scene_index);
-    }
+    // public void Next_Scene()
+    // {
+    //     Scene_index = SceneManager.GetActiveScene().buildIndex + 1;
+    //     SceneManager.LoadSceneAsync(Scene_index);
+    // }
 }
